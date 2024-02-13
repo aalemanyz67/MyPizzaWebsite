@@ -143,3 +143,12 @@ html{
     text-align: center;
     width: 100%;
 }
+.header .login-form{
+   position: absolute;
+   top: 115%; right: -105%;
+   background: #fff;
+   border-radius: .5rem;
+   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+   width: 35rem;
+   padding: 2rem; 
+}
