@@ -17,6 +17,24 @@ html{
     scroll-behavior: smooth;
  }
 
+ .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border: .1rem solid #130f40;
+    border-radius: .5rem;
+    background: none;
+    color: #130f40;
+    font-size: 1.7rem;
+    cursor:pointer;
+ }
+ .btn:hover{
+    background-color: #130f40;
+    color: #fff
+
+;
+ }
+
  /* CSS for the header*/
  .header{
     position: fixed;
@@ -63,4 +81,65 @@ html{
 }
 .header .icons #menu{
     display: none;
+}
+.header .shopping-cart{
+    position: absolute;
+    top: 115%; right: -105%;
+    background: #fff;
+    border-radius:.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1) ;
+    width: 35rem;
+    padding: 2rem;
+}
+.header .shopping-cart.active{
+    right: 2rem;
+    transition: .4s linear;
+
+
+}
+.header .shopping-cart .box{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.header .shopping-cart .box .fa-times{
+    position: absolute;
+    top: 50%; right: 2rem;
+    transform: translateY(-50%);
+    font-size: 2.2rem;
+    color: #666;
+    cursor: pointer;
+}
+.header .shopping-cart .box .fa-times:hover{
+    color: #ff7800
+}
+.header .shopping-cart .box img{
+    height: 10rem;
+
+}
+.header .shopping-cart .box .content h3{
+ font-size:2rem;
+ padding-bottom: .5rem;
+ color: #130f40;
+}
+.header .shopping-cart .box .content span{
+    font-size:2rem;
+    color: #666;
+
+}
+.header .shopping-cart .box .content span.multiply{
+    margin: 0 .5rem;
+}
+
+.header .shopping-cart .total{
+    color: #130f40;
+    text-align: center;
+    font-size: 2.2rem;
+} 
+.header .shopping-cart .btn{
+    text-align: center;
+    width: 100%;
 }
