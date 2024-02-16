@@ -10,5 +10,20 @@ let login = document.querySelector('.login-form');
 
 document.querySelector('#login').onclick = () =>{
     login.classList.toggle('active');
+    cart.classList.remove('active');
 
 }
+var swiper = new Swiper(".home-slider", {
+    autoplay:{
+        delay: 7500,
+        disableOnInteraction:false,
+    },
+    grabCursor: true,
+    loop: true,
+    centeredSlides:true,
+    navigation: {
+        nextE1: '.swiper-button-next',
+        prevE1: '.swiper-buttpm-prev',
+
+    },
+});
