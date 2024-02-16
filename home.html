@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PizzaWebsite</title>
+    <!--link for font-awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
-    
+    <!--link for swiper cdn-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,7 +15,7 @@
 
     <header class="header">
 
-        <a href="home.html" class="logo"> <i class="fas fa-pizza-slice"></i>pizza</a>
+        <a href="home.html" class="logo"> <i class="fas fa-pizza-slice"></i>FireHouse Pizza</a>
 
         <nav class="navbar">
             <a href="home.html">home</a>
@@ -83,20 +84,49 @@
 
         
     </header>
-
-
-
-
-
-
-
-
-
-
     <!--Section for End of the Header-->
+   
+    <!--Section for Start of the Home Section-->
+    <section class="home">
+
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide" style="background: url(images/slider-1.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>The<span>tastiest</span>pizza <br> on the planet!!</h3>
+                        <a href="#" class="btn">Order Now</a>
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(images/slider-2.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>The<span>tastiest</span>pizza <br> on the planet!!</h3>
+                        <a href="#" class="btn">Order Now</a>
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(images/slider-3.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>The<span>tastiest</span>pizza <br> on the planet!!</h3>
+                        <a href="#" class="btn">Order Now</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+    </section>
 
 
-
+<!--link for swiper cdn-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
